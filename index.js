@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express();
+//this cors for access server
 const cors = require('cors')
 const port = process.env.PORT || 5000;
 
+//cors for server access
 app.use(cors());
 
 const categories = require('./data/categories.json')
